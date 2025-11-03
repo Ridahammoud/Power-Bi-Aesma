@@ -58,8 +58,6 @@ else:
                 border: none;
             }
         </style>
-        <iframe title="Dashboard_AESMA_daily_New" width="1140" height="541.25"
-        src="https://app.powerbi.com/reportEmbed?reportId=ce04f5e8-9e59-4f46-aaac-8178ca8f8136&autoAuth=true&ctid=70c9c52f-2483-473b-afd8-1627b7563e5b&actionBarEnabled=true&reportCopilotInEmbed=true"
-        frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="Dashboard_AESMA_daily_New_Released" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=24e1ad7f-1036-4b67-ab7b-6e766bf2eb55&autoAuth=true&ctid=70c9c52f-2483-473b-afd8-1627b7563e5b" frameborder="0" allowFullScreen="true"></iframe>
     """
     st.markdown(powerbi_iframe, unsafe_allow_html=True)
