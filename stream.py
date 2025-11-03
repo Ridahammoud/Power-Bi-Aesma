@@ -48,8 +48,18 @@ else:
     # 📊 Tableau de bord Power BI
     # --------------------------------------------------------
     powerbi_iframe = """
-    <iframe title="Dashboard_AESMA_daily_New" width="1140" height="541.25"
-    src="https://app.powerbi.com/reportEmbed?reportId=ce04f5e8-9e59-4f46-aaac-8178ca8f8136&autoAuth=true&ctid=70c9c52f-2483-473b-afd8-1627b7563e5b&actionBarEnabled=true&reportCopilotInEmbed=true"
-    frameborder="0" allowFullScreen="true"></iframe>
+        <style>
+            iframe {
+                position: fixed;
+                top: 70px; /* espace pour le titre */
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 70px);
+                border: none;
+            }
+        </style>
+        <iframe title="Dashboard_AESMA_daily_New" width="1140" height="541.25"
+        src="https://app.powerbi.com/reportEmbed?reportId=ce04f5e8-9e59-4f46-aaac-8178ca8f8136&autoAuth=true&ctid=70c9c52f-2483-473b-afd8-1627b7563e5b&actionBarEnabled=true&reportCopilotInEmbed=true"
+        frameborder="0" allowFullScreen="true"></iframe>
     """
     st.markdown(powerbi_iframe, unsafe_allow_html=True)
